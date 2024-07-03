@@ -23,7 +23,7 @@ const Login = () => {
     const submitHandler=async (event)=>{
      event.preventDefault()
      try{
-      const res=await axios.post(`${window.location.origin}/api/v1/login`,data).then(res=>{
+      const res=await axios.post("http://localhost:7000/api/v1/login",data).then(res=>{
         if(res.data=="incorrect"){
             toast.error("Incorrect Password")
         }

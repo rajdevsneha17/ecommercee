@@ -8,7 +8,7 @@ const OTP = () => {
     const submitHandler=(event)=>{
        event.preventDefault()
        try{
-axios.post(`${window.location.origin}/api/v1/sendMail`,data)
+axios.post("http://localhost:7000/api/v1/sendMail",data)
        }catch(error){
 console.log("error is",error)
        }
