@@ -19,7 +19,7 @@ const Modal = ({ setShowModal, totalAmount }) => {
         setError("");
       }, 3000);
     } else {
-      axios.post("http://localhost:7000/api/v1/order", data)
+      axios.post(`${window.location.origin}/api/v1/order`, data)
         .then(res => {
           if (res.data === "notexist") {
             toast.error("Please Login or Signup First");
