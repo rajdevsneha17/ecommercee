@@ -19,7 +19,8 @@ const submitHandler = async (event) => {
   try {
       const response = await axios.post('https://ecommerceback-o9cs.vercel.app/api/v1/sendmail', data, {
           headers: {
-              'Content-Type': 'application/json'
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
           },
           withCredentials: false
       });
