@@ -3,7 +3,7 @@ const app=express()
 const PORT=process.env.PORT||7000
 const cors = require('cors');
 app.use(cors({
-    origin: '*', 
+    origin: 'https://ecommerceback-five.vercel.app/',    
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
