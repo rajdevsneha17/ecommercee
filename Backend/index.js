@@ -43,7 +43,7 @@ const PORT = process.env.PORT || 7000;
 
 // Configure CORS to allow requests from your frontend
 app.use(cors({
-    origin: 'https://ecommercee.vercel.app',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
@@ -51,7 +51,7 @@ app.use(cors({
 
 // Middleware to handle CORS preflight requests
 app.options('*', cors({
-    origin: 'https://ecommercee.vercel.app',
+    origin: '*',
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true
