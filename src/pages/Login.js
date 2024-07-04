@@ -23,7 +23,7 @@ const Login = () => {
     const submitHandler=async (event)=>{
      event.preventDefault()
      try{
-      const res=await axios.post("https://ecommerceback-five.vercel.app/api/v1/login",data).then(res=>{
+      const res=await axios.post("https://ecommerceback-sga8.vercel.app/api/v1/login",data).then(res=>{
         if(res.data=="incorrect"){
             toast.error("Incorrect Password")
         }

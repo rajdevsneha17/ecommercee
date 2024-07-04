@@ -8,7 +8,7 @@ const OTP = () => {
     const submitHandler=(event)=>{
        event.preventDefault()
        try{
-axios.post("https://ecommerceback-five.vercel.app/api/v1/sendMail",data)
+axios.post("https://ecommerceback-sga8.vercel.app/api/v1/sendMail",data)
        }catch(error){
 console.log("error is",error)
        }
