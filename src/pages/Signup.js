@@ -32,7 +32,7 @@ const Signup = () => {
            
         }
         try {
-            const response = await axios.post("https://ecommerceback-vefk.vercel.app/api/v1/sendmail",data)
+            const response = await axios.post("https://ecommerceback-o9cs.vercel.app/api/v1/sendmail",data)
             .then(res=>{
                 if(res.data=="exist"){
                

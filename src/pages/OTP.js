@@ -17,7 +17,7 @@ const OTP = () => {
 const submitHandler = async (event) => {
   event.preventDefault();
   try {
-      const response = await axios.post('https://ecommerceback-vefk.vercel.app/api/v1/sendmail', data, {
+      const response = await axios.post('https://ecommerceback-o9cs.vercel.app/api/v1/sendmail', data, {
           headers: {
               'Content-Type': 'application/json'
           },
