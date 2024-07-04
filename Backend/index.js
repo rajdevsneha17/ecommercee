@@ -3,9 +3,9 @@ const app=express()
 const PORT=process.env.PORT||7000
 const cors = require('cors');
 app.use(cors({
-    origin: 'https://ecommercee.vercel.app',    
+    origin: ['https://ecommercee.vercel.app'],    
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'Authorization']
+    credentials:true
 }));
 // Middleware to handle CORS preflight requests
 app.use((req, res, next) => {
