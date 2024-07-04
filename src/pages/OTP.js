@@ -22,7 +22,7 @@ const submitHandler = async (event) => {
               "Access-Control-Allow-Origin": "*",
               "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
           },
-          withCredentials: false
+          
       });
       console.log('Response:', response.data);
   } catch (error) {
