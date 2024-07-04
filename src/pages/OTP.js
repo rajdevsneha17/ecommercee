@@ -21,7 +21,7 @@ const submitHandler = async (event) => {
           headers: {
               'Content-Type': 'application/json'
           },
-          withCredentials: true
+          withCredentials: false
       });
       console.log('Response:', response.data);
   } catch (error) {
